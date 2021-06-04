@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Interaxion Uploder</title>
+        {{ dropzone.load() }}
+        {{ dropzone.style('border: 2px dashed #0087F7; margin: 10%; min-height: 400px;') }}
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../static/css/legacy.css">
+        <link rel="stylesheet" href="../static/css/style.css">
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+      <div class="app">
+        <h1>Interaxion Uploader</h1>
+        <p>音声ファイルをドラッグアンドドロップしてください。</p>
+        {{ dropzone.create(action_view='index') }}
+      </div>
+    </body>
+</html>
